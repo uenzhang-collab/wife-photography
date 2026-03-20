@@ -1,0 +1,63 @@
+---
+---
+
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8" />
+  <title>經典心象 | 攝影集</title>
+  <style>
+    :root {
+      --warm-bg: #fdfbf7;
+      --text-color: #3e362e;
+      --accent: #b8860b;
+    }
+    body {
+      background-color: var(--warm-bg);
+      color: var(--text-color);
+      font-family: 'Times New Roman', serif;
+      margin: 0;
+      padding: 2rem;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 4rem;
+    }
+    h1 {
+      font-size: 3rem;
+      letter-spacing: 0.1rem;
+      font-weight: 300;
+      color: var(--accent);
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .photo-item {
+      background: #e5e5e5;
+      aspect-ratio: 3/4;
+      transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+      cursor: pointer;
+      overflow: hidden;
+      /* 實驗性：錯位感 */
+      margin-top: clamp(0px, 5vh, 100px);
+    }
+    .photo-item:hover {
+      transform: scale(1.02) rotate(-1deg);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>心象 | Mindscape</h1>
+    <p>—— 自然地景、人文街拍與哲思的凝視</p>
+  </header>
+  <main class="gallery">
+    <div class="photo-item"></div>
+    <div class="photo-item"></div>
+    <div class="photo-item"></div>
+  </main>
+</body>
+</html>
