@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+@theme {
+  --color-warm: #fdfbf7;
+  --color-text: #3e362e;
+  --color-accent: #b8860b;
+}
+
+@layer base {
+  body {
+    @apply bg-warm text-text font-serif;
+  }
+}
